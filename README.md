@@ -9,7 +9,7 @@ API URL : localhost:4000/answer/check\
 Method: POST\
 Request Body :\
 {\
-	"sudokuAnswer" : array
+	"sudokuAnswer" : array\
 }\
 The input params are mandatory. `sudokuAnswer` must contains 9x9 arrays of answer.
 Request Body Example :\
