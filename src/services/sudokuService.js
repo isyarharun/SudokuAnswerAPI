@@ -28,19 +28,18 @@ module.exports = {
   }
 };
 
-// function is coming from
-// https://stackoverflow.com/questions/5111434/sudoku-validity-check-algorithm-how-does-this-code-works
 function isValid(values) {
   if (Array.isArray(values)) {
-    let flag = 0;
+    let temp = [];
     for (let i = 0; i < values.length; i++) {
       let value = values[i];
       if (value != 0) {
-        let bit = 1 << value;
-        if ((flag & bit) != 0) return false;
-        flag |= bit;
+        let exist = temp.filter(a => a === value);
+        if (exist.length > 0) return false;
+        temp.push(value);
       }
     }
     return true;
   }
+  return false;
 }
