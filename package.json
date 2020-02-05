@@ -1,4 +1,9 @@
 {
+  "name": "sudokuanswerapi",
+  "version": "1.0.0",
+  "description": "an API to check sudoku answer is right or wrong",
+  "main": "src/app.js",
+  "author": "Isyar Andika Harun",
   "scripts": {
     "test": "mocha",
     "dev": "node src/app.js"
